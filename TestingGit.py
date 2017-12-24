@@ -3,3 +3,4 @@
 # Testing Git integration with pycharm
 #
 print("Hello World")
+print("Same to you too")
