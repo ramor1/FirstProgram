@@ -3,15 +3,16 @@
 debug=False                                     # Debug Flag
 
 smallest=1                                      # Lower Limit
-largest=100                                     # Upper Limit
+largest=128                                     # Upper Limit
 guess_number=0                                  # Lopp counter of the number of times through
 found_it=False;                                 # Set to true when the number is found
-print("Think of a number between 1 and 100")
+print("Think of a number between 1 and 128")
 while not(found_it):
     guess = (smallest + largest) / 2            # We'll guess in the middle.
     if smallest > largest:                      # If the Lower limit is ever greater than the upper limit, then error
         print("You're fibbing!!")
         break                                   # We're outta here
+        
     guess_number = guess_number+1               # bump the loop counter and prompt the user for an answer
     answer=raw_input("Is your number 'more' or 'less' or 'equal' to " + str(guess) +"? ")
     if answer == "more":                        # If we're low then make the new lower limit equal to one more
